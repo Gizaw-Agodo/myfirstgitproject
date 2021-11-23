@@ -4,6 +4,29 @@
 
 
     <body>
+        <p id="the"></p>
+        <script>
+            let text = '';
+            const arr = [45,56,78,77,66];
+            arr.forEach(myFunc());
+           function myFunc(value , index , array){
+               text+=value  + '<br>'
+        }
+       document.getElementById('the').innerHTML = text;
+
+        </script>
+
+        <p id="demo"></p>
+        <script>
+            array = [6,7,8,9];
+            myreturn = array.reduce(myfunction(),0);
+            function myfunction(innit , value){
+                value +=value;
+            }
+            document.getElementById('demo').innerHTML= myreturn;
+        </script>
+
+    
         <h2>tell more about you</h2>
         <form>
             <label>full name <br> <input type="text"> </label><br><br>
@@ -31,6 +54,7 @@
 <li><input type="radio" name="age" value="35-44"> 35 to 44</li>
 <li><input type="radio" name="age" value="over45"> 45+</li>
 </ol>
+<the >the na</the>
             <input type="submit" value="submit ">
         </form>
         the farthe st o 7y34rtiuotyjk;lss<br>
