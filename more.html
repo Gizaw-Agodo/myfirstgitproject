@@ -17,13 +17,19 @@
         </script>
 
         <p id="demo"></p>
+
+
         <script>
-            array = [6,7,8,9];
-            myreturn = array.reduce(myfunction(),0);
+            let array = [6,7,8,9];
+            let myreturn = array.reduce(myfunction(),0);
             function myfunction(innit , value){
                 value +=value;
+
+            let cheek = array.every(function(value){
+                return value >10 ;
+            })
             }
-            document.getElementById('demo').innerHTML= myreturn;
+            document.getElementById('demo').innerHTML= cheek;
         </script>
 
     
