@@ -2,27 +2,42 @@
 <html>
     <head>
         <style>
-            .button {
-                border: 1px solid green;
-                background-color: rgba(0, 255, 0, 0.4);
-                color: white;
-                padding: 100px 100px;
-                text-align: center;
+            .back{
+                animation-name: myanime;
+                animation-duration: 5s;
+                animation-duration: infinite;
+                
+            
+            }
+            @keyframes myanime{
+                0% {background-image: repeating-linear-gradient(green 10px , red ,yellow 15px);
+                width: 150px;
+                height: 150px;}
+                25%{background-image: repeating-radial-gradient(green 10px , red ,yellow 15px);
                 width: 100px;
-                display: block;
+                height: 100px;}
+                50%{background-image: repeating-radial-gradient(green 10px , red ,yellow 15px);
+                width: 150px;
+                height: 150px;}
+                75%{
+                background-image: repeating-radial-gradient(green 10px , red ,yellow 15px);
+                width: 100px;
+                height: 100px;
+                }
+                
+            }
 
-            }     
-            button :not(:last-child)  {
-                border-bottom: none;
-            }       
-              button:hover{
-                background-color: red;}
+            }  
+               
+            
                 
         </style>
     </head>
 
  <p> the man in the junge</p>
+
     </body>
+    <div class="back"></div>
      <div class="mybutons">
          <button class="button">the man</button>
          <button class="button">the woman</button>
